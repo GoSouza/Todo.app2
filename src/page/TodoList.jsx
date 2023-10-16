@@ -80,7 +80,7 @@ const TodoList = () => {
 
   useEffect(() => {
     if (userToken) {
-      // Faça uma solicitação GET para buscar todas as tarefas do usuário autenticado
+     
       TodoListController.getAllTasks(userToken)
         .then((response) => {
           setTaskList(response.data);
